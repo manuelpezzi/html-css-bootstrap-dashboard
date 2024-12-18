@@ -48,14 +48,15 @@
             </div>
         </nav>
     </header>
-    <div class="d-flex justify-content-between p-3 align-items-center col-md-12">
-        <h4 class="text-capitalize ">catalogo libri</h4>
-        <button type="button" class="btn btn-primary text-capitalize">aggiungi libro</button>
     </div>
-    <div class="container d-md-flex ">
+    <div class="container d-md-flex flex-md-column  ">
+        <div class="d-flex justify-content-between p-3 align-items-center col-md-10">
+            <h4 class="text-capitalize ">catalogo libri</h4>
+            <button type="button" class="btn btn-primary text-capitalize">aggiungi libro</button>
+        </div>
 
-        <div>
-            <table class="table table table-striped  col-md-6">
+        <div class="col-md- d-md-flex">
+            <table class="table table table-striped ">
                 <thead>
                     <tr>
                         <th scope="col" class="col-6 text-capitalize">titolo</th>
@@ -178,7 +179,7 @@
                     </tr>
                 </tbody>
             </table>
-            <div>
+            <div class="p-md-3">
                 <div class="card border-secondary mb-3" style="max-width: 22rem;">
                     <h3 class="card-header">Todo</h3>
                     <div class="card-body">
@@ -257,10 +258,10 @@
                     </div>
                 </div>
             </div>
-
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-                crossorigin="anonymous"></script>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
