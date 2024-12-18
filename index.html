@@ -7,38 +7,178 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary text-capitalize" data-bs-theme="dark">
             <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img width="50px" src="./img-4/duck.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="#">Hidden brand</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">catalogo libri</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">anagrafica utenti</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="#">storico prestiti</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">help</a>
+                        </li>
+                        </li>
+
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="cerca">
+                        <button class="btn btn-outline-success" type="submit">cerca</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
+    <div class="container">
+        <div class="d-flex justify-content-between p-3 align-items-center">
+            <h4 class="text-capitalize ">catalogo libri</h4>
+            <button type="button" class="btn btn-primary text-capitalize">aggiungi libro</button>
+        </div>
+        <div>
+            <table class="table table table-striped col-12">
+                <thead>
+                    <tr>
+                        <th scope="col" class="col-6 text-capitalize">titolo</th>
+                        <th scope="col" class="d-none d-md-table-cell col-lg-2 text-capitalize">data prestito</th>
+                        <th scope="col" class="col-lg-3 text-capitalize">stato</th>
+                        <th scope="col" class="col-lg-1 text-capitalize">azioni</th>
+                    </tr>
+                </thead>
+                <tbody class="text-capitalize">
+                    <tr>
+                        <td>i pilastri della terra</td>
+                        <td class="d-none d-md-table-cell">-</td>
+                        <td><button type="button" class="btn btn-success btn-sm">disponibile</button></td>
+                        </td>
+                        <td class="d-flex gap-1"><button type="button" class="btn btn-outline-secondary btn-sm"> <i
+                                    class="fa-solid fa-pencil"></i></button><button type="button"
+                                class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td> I promessi sposi</td>
+                        <td class="d-none d-md-table-cell">Mark</td>
+                        <td><button type="button" class="btn btn-success btn-sm">disponibile</button></td>
+                        <td class="d-flex gap-1"><button type="button" class="btn btn-outline-secondary btn-sm"> <i
+                                    class="fa-solid fa-pencil"></i></button><button type="button"
+                                class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                        >
+                    </tr>
+                    <tr>
+                        <td> i pilastri della terra</td>
+                        <td class="d-none d-md-table-cell">Mark</td>
+                        <td>Otto</td>
+                        <td class="d-flex gap-1"><button type="button" class="btn btn-outline-secondary btn-sm"> <i
+                                    class="fa-solid fa-pencil"></i></button><button type="button"
+                                class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> i pilastri della terra</td>
+                        <td class="d-none d-md-table-cell">Mark</td>
+                        <td>Otto</td>
+                        <td class="d-flex gap-1"><button type="button" class="btn btn-outline-secondary btn-sm"> <i
+                                    class="fa-solid fa-pencil"></i></button><button type="button"
+                                class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> i pilastri della terra</td>
+                        <td class="d-none d-md-table-cell">Mark</td>
+                        <td>Otto</td>
+                        <td class="d-flex gap-1"><button type="button" class="btn btn-outline-secondary btn-sm"> <i
+                                    class="fa-solid fa-pencil"></i></button><button type="button"
+                                class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> i pilastri della terra</td>
+                        <td class="d-none d-md-table-cell">Mark</td>
+                        <td>Otto</td>
+                        <td class="d-flex gap-1"><button type="button" class="btn btn-outline-secondary btn-sm"> <i
+                                    class="fa-solid fa-pencil"></i></button><button type="button"
+                                class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> i pilastri della terra</td>
+                        <td class="d-none d-md-table-cell">Mark</td>
+                        <td>Otto</td>
+                        <td class="d-flex gap-1"><button type="button" class="btn btn-outline-secondary btn-sm"> <i
+                                    class="fa-solid fa-pencil"></i></button><button type="button"
+                                class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> i pilastri della terra</td>
+                        <td class="d-none d-md-table-cell">Mark</td>
+                        <td>Otto</td>
+                        <td class="d-flex gap-1"><button type="button" class="btn btn-outline-secondary btn-sm"> <i
+                                    class="fa-solid fa-pencil"></i></button><button type="button"
+                                class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> i pilastri della terra</td>
+                        <td class="d-none d-md-table-cell">Mark</td>
+                        <td>Otto</td>
+                        <td class="d-flex gap-1"><button type="button" class="btn btn-outline-secondary btn-sm"> <i
+                                    class="fa-solid fa-pencil"></i></button><button type="button"
+                                class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> i pilastri della terra</td>
+                        <td class="d-none d-md-table-cell">Mark</td>
+                        <td>Otto</td>
+                        <td class="d-flex gap-1"><button type="button" class="btn btn-outline-secondary btn-sm"> <i
+                                    class="fa-solid fa-pencil"></i></button><button type="button"
+                                class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> i pilastri della terra</td>
+                        <td class="d-none d-md-table-cell">Mark</td>
+                        <td>Otto</td>
+                        <td class="d-flex gap-1"><button type="button" class="btn btn-outline-secondary btn-sm"> <i
+                                    class="fa-solid fa-pencil"></i></button><button type="button"
+                                class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> i pilastri della terra</td>
+                        <td class="d-none d-md-table-cell">Mark</td>
+                        <td>Otto</td>
+                        <td class="d-flex gap-1"><button type="button" class="btn btn-outline-secondary btn-sm"> <i
+                                    class="fa-solid fa-pencil"></i></button><button type="button"
+                                class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
