@@ -48,13 +48,14 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <div class="d-flex justify-content-between p-3 align-items-center">
-            <h4 class="text-capitalize ">catalogo libri</h4>
-            <button type="button" class="btn btn-primary text-capitalize">aggiungi libro</button>
-        </div>
+    <div class="d-flex justify-content-between p-3 align-items-center col-md-12">
+        <h4 class="text-capitalize ">catalogo libri</h4>
+        <button type="button" class="btn btn-primary text-capitalize">aggiungi libro</button>
+    </div>
+    <div class="container d-md-flex ">
+
         <div>
-            <table class="table table table-striped col-12">
+            <table class="table table table-striped  col-md-6">
                 <thead>
                     <tr>
                         <th scope="col" class="col-6 text-capitalize">titolo</th>
@@ -178,22 +179,81 @@
                 </tbody>
             </table>
             <div>
-                <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                <div class="card border-secondary mb-3" style="max-width: 22rem;">
                     <h3 class="card-header">Todo</h3>
                     <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                        </p>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                <label class="form-check-label" for="firstCheckbox">chiamare segreteria</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                <label class="form-check-label" for="secondCheckbox">mandare avvisi prestiti
+                                    scaduti</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                <label class="form-check-label" for="thirdCheckbox">ordinare nuovi libri</label>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
-                <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                <div class="card border-secondary mb-3" style="max-width: 22rem;">
                     <h3 class="card-header text-uppercase ">f.a.q.</h3>
                     <div class="card-body">
-                        <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        come aggiungere un nuovo libro?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        first item's accordion body.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        come posso accedere all'anagrafica utenti?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        second item's accordion body. Let's imagine this being filled with some actual
+                                        content.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        posso usare questa dashboard da mobile?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        third item's accordion body. Nothing more exciting happening here in terms of
+                                        content, but just filling up the space to make it look, at least at first
+                                        glance, a bit more representative of how this would look in a real-world
+                                        application.</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
