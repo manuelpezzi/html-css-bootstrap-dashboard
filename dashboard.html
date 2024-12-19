@@ -63,11 +63,57 @@
                     aria-label="Last name">
             </div>
         </div>
-        </form>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        <div class="mb-3">
+            <strong><label for="formGroupExampleInput" class="form-label text-capitalize pt-3 ">titolo</label></strong>
+            <input type="text" class="form-control" id="formGroupExampleInput"
+                placeholder="inserisci il titolo del libro">
+            <span class="text-secondary pt-1">Titolo della versione italiana</span>
+        </div>
+        <div class=" row">
+            <div class="col-md-4 pt-md-3">
+                <h5 class="text-capitalize">scegli il genere</h5>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>scegli il genere</option>
+                    <option value="1">horror</option>
+                    <option value="2">fantasy</option>
+                    <option value="3">storico</option>
+                    <option value="4">drama</option>
+                    <option value="5">giallo</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <strong><label for="formGroupExampleInput" class="form-label text-capitalize pt-3 ">anno di
+                        publicazione</label></strong>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="inserisci l'anno">
+            </div>
+            <div class="col-md-4 ">
+                <strong><label for="formGroupExampleInput"
+                        class="form-label text-uppercase pt-3 ">isbn#</label></strong>
+                <input type="text" class="form-control" id="formGroupExampleInput"
+                    placeholder="inserisci il codice ISBN#">
+            </div>
+
+        </div>
+        <hr>
+        <h5 class="text-capitalize pt-2">note</h5>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2" class="text-secondary">inserisci eventuali note sul libro</label>
+        </div>
+        <div class="form-check pt-3 pb-3">
+            <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Disponibile anche in digitale
+            </label>
+
+
+            </form>
+        </div>
+        <button type="button" class="btn btn-primary text-capitalize ">aggiungi libro</button>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
